@@ -21,41 +21,41 @@
 
 def question2():
     answerDiscount = 0.9
-    answerNoise = 0.2
+    answerNoise = 0.005 # Hit and trial method
     return answerDiscount, answerNoise
 
 def question3a():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.1 # discount should be small
+    answerNoise = 0 # no need of noise
+    answerLivingReward = -0.1 # Living reward will be negative to risk the cliff
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3b():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.1 # Discount should be small
+    answerNoise = 0.01 # Small noise
+    answerLivingReward = 0.01 # Living reward will be negative to risk the cliff
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3c():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.9 # Higher discount needed to prefer distant exit
+    answerNoise = 0.0 # No noise is needed
+    answerLivingReward = 0.1 # Small living reward
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3d():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.9 
+    answerNoise = 0.1 # increase noise to avoid cliff
+    answerLivingReward = 0.1
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3e():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.0 # no discount needed
+    answerNoise = 0.0 # no noise
+    answerLivingReward = 0.1 #only living reward
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
